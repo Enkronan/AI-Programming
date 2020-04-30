@@ -2,7 +2,7 @@ from helper import load_checkpoint, process_image, create_labels, get_predict_ar
 import torch
 import torch.nn.functional as F
 
-def predict(img, model, dev="gpu", topk=5):
+def predict(img, model, dev, topk):
     ''' Predict the class (or classes) of an image using a trained deep learning model.
     '''
     
