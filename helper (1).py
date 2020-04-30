@@ -36,6 +36,7 @@ def get_predict_args():
     parser.add_argument('--json', type=str, default='cat_to_name.json', help="provide a json file")
     parser.add_argument('--dev', type=str, default='gpu', help="Device")
     parser.add_argument('--check', type=str, default='checkpoint.pth', help="Checkpoint Path")
+    parser.add_argument('--top_k', type=int, default='5', help="Top K to be printed")
 
     # Replace None with parser.parse_args() parsed argument collection that 
     # you created with this function 

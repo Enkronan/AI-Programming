@@ -44,7 +44,7 @@ if __name__ == "__main__":
     
     img = process_image(in_arg.img)
     
-    probabilities, labels = predict(img, model, in_arg.dev)
+    probabilities, labels = predict(img, model, in_arg.dev, in_arg.top_k)
     
     labels = create_labels(labels, in_arg.json)
     
